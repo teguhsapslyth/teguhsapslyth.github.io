@@ -3974,3 +3974,9 @@ input, select, textarea {
     box-sizing: border-box;
     padding-left: 20px;
 }
+	/* Geser caption menjauh dari garis hijau */
+#first .photo-gallery .photo-card figcaption {
+    padding-left: 35px !important;
+    padding-right: 15px !important;
+    box-sizing: border-box;
+}
