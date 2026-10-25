@@ -3893,43 +3893,49 @@ input, select, textarea {
 .photo-card {
     margin: 0;
     min-width: 0;
-}
-
-.photo-card img {
-    display: block;
     width: 100%;
-    height: 280px;
-    object-fit: contain;
-    object-position: center;
 }
 
-.photo-card figcaption {
-    padding-top: 1rem;
-}
-
-.photo-card h3 {
-    margin-bottom: 0.75rem;
-}
-
-.photo-card p {
-    font-size: 0.9rem;
-    line-height: 1.7;
-}
-
-@media screen and (max-width: 736px) {
- .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    width: 100%;
-    align-items: start;
-}
 .photo-card img {
     display: block;
     width: 100%;
     height: auto;
-    max-height: 600px;
+    max-height: 650px;
     object-fit: contain;
     object-position: center;
     margin: 0 auto;
+}
+
+.photo-card figcaption {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1rem;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+.photo-card figcaption h3 {
+    margin-bottom: 0.75rem;
+    overflow-wrap: anywhere;
+}
+
+.photo-card figcaption p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+@media screen and (max-width: 736px) {
+    .photo-gallery {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .photo-card img {
+        width: 100%;
+        height: auto;
+        max-height: none;
+    }
 }
