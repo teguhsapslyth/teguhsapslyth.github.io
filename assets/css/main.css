@@ -3967,9 +3967,10 @@ input, select, textarea {
     word-wrap: break-word;
 }
 
-.photo-card figcaption p {
+.photo-card figcaption {
     width: 100%;
-    font-size: 0.9rem;
-    line-height: 1.5;
-    margin-bottom: 1.5rem;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
