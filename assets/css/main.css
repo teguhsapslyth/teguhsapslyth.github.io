@@ -3945,4 +3945,31 @@ input, select, textarea {
         height: auto;
         max-height: none;
     }
+
+	```css
+/* Final caption layout */
+.photo-card {
+    min-width: 0;
+}
+
+.photo-card figcaption {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+.photo-card figcaption h3,
+.photo-card figcaption p {
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.photo-card figcaption p {
+    width: 100%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
 }
