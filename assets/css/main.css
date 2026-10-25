@@ -3931,6 +3931,7 @@ input, select, textarea {
     line-height: 1.7;
     white-space: normal;
     overflow-wrap: break-word;
+    margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 736px) {
