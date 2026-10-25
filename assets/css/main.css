@@ -3980,3 +3980,13 @@ input, select, textarea {
     padding-right: 15px !important;
     box-sizing: border-box;
 }
+
+#first .content {
+    padding-left: 35px;
+}
+
+#first .photo-gallery .photo-card figcaption {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box;
+}
