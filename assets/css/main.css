@@ -3981,12 +3981,14 @@ input, select, textarea {
     box-sizing: border-box;
 }
 
-#first .content {
-    padding-left: 35px;
+#first .photo-gallery .photo-card figcaption {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    box-sizing: border-box;
 }
 
-#first .photo-gallery .photo-card figcaption {
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-    box-sizing: border-box;
+#first .photo-gallery .photo-card figcaption h3,
+#first .photo-gallery .photo-card figcaption p {
+    margin-left: 0;
 }
