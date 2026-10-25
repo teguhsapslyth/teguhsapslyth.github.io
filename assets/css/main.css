@@ -3992,3 +3992,17 @@ input, select, textarea {
 #first .photo-gallery .photo-card figcaption p {
     margin-left: 0;
 }
+
+#first .photo-gallery {
+    padding-left: 90px !important;
+    padding-right: 5rem !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 736px) {
+    #first .photo-gallery {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
