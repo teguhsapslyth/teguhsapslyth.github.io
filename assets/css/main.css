@@ -3907,24 +3907,30 @@ input, select, textarea {
 }
 
 .photo-card figcaption {
+    display: block;
     width: 100%;
     max-width: 100%;
-    padding-top: 1rem;
     box-sizing: border-box;
-    overflow-wrap: anywhere;
+    padding-top: 1rem;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .photo-card figcaption h3 {
-    margin-bottom: 0.75rem;
-    overflow-wrap: anywhere;
+    max-width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 .photo-card figcaption p {
+    display: block;
     width: 100%;
     max-width: 100%;
+    box-sizing: border-box;
     font-size: 0.9rem;
     line-height: 1.7;
-    overflow-wrap: anywhere;
+    white-space: normal;
+    overflow-wrap: break-word;
 }
 
 @media screen and (max-width: 736px) {
