@@ -4051,3 +4051,7 @@ input, select, textarea {
 #first header .mapping-intro p {
     margin: 0 !important;
 }
+	#first .content {
+  padding-left: 40px !important;
+  box-sizing: border-box;
+}
