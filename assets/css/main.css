@@ -1,94 +1,57 @@
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+   ================================================== */
+
+/* Keep the first section's header inside its own left grid column.
+   The original template gave this header a fixed 33rem width plus
+   large horizontal padding, which made its children overflow. */
+#wrapper > section#first > header {
+    grid-area: header !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 2rem 3rem 3rem 2rem !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
 }
 
-.mapping-divider {
-    display: block;
-    width: 65px;
-    height: 3px;
-    background-color: #39eac5;
-    border-radius: 3px;
-    margin: 0 auto 1rem;
+/* The mapping title and four cards use the available green-column width. */
+#wrapper > section#first > header > .mapping-intro {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1rem 0 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
 }
-
-.mapping-intro h2 {
-    margin: 0 0 0.5rem 0;
-    padding: 0;
-}
-
-.mapping-intro p {
-    margin: 0;
-    padding: 0;
-    font-size: 0.9rem;
-    line-height: 1.5;
-}
-
-/* Reduce distance between mapping title and caption */
-
-#first header .mapping-intro p {
-    margin-top: -2rem !important;
-    position: relative;
-    z-index: 1;
-}
-
-/* FIX MAPPING TITLE AND CAPTION SPACING */
-
-#wrapper > section#first > header .mapping-intro h2 {
-    margin-bottom: 0.5rem !important;
-}
-
-#wrapper > section#first > header .mapping-intro p {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-/* PRACTICAL STUDIO & MAPPING INTRO */
-
-#wrapper > section#first > header .mapping-intro {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#wrapper > section#first > header .mapping-intro h2 {
-    margin: 0 0 0.5rem 0 !important;
-}
-
-#wrapper > section#first > header .mapping-intro p {
-    margin: 0 !important;
-    padding: 0;
-    line-height: 1.6;
-}
-
-/* =====================================
-   MAPPING PROJECTS - GREEN HEADER
-   ===================================== */
 
 #wrapper > section#first > header > .mapping-grid {
     display: grid !important;
+    position: relative !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-rows: 145px !important;
     gap: 12px !important;
     width: 100% !important;
-    margin: 24px 0 0 !important;
+    max-width: 100% !important;
+    margin: 22px 0 0 !important;
     padding: 0 !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 #wrapper > section#first > header > .mapping-grid > .mapping-card {
     display: block !important;
     position: relative !important;
     width: 100% !important;
-    height: 180px !important;
-    min-width: 0;
+    height: 145px !important;
+    min-width: 0 !important;
     margin: 0 !important;
-    padding: 6px !important;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    overflow: hidden;
-    box-sizing: border-box;
+    padding: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
 }
 
 #wrapper > section#first > header > .mapping-grid > .mapping-card img {
@@ -97,17 +60,57 @@
     width: 100% !important;
     height: 100% !important;
     max-width: 100% !important;
-    object-fit: contain !important;
+    max-height: 100% !important;
     margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
 }
 
-@media screen and (max-width: 736px) {
+/* Experience content remains in the right/content column, not over the header. */
+#wrapper > section#first > .experience-gallery {
+    grid-area: content !important;
+    position: relative !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* On narrow screens the template stacks header above experience content. */
+@media screen and (max-width: 1152px) {
+    #wrapper > section#first > header {
+        width: 100% !important;
+        padding: 2rem 2rem 2rem 2rem !important;
+        text-align: center !important;
+    }
+
     #wrapper > section#first > header > .mapping-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 10px !important;
+        grid-auto-rows: 130px !important;
     }
 
     #wrapper > section#first > header > .mapping-grid > .mapping-card {
         height: 130px !important;
+    }
+
+    #wrapper > section#first > .experience-gallery {
+        grid-area: content !important;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #wrapper > section#first > header {
+        padding: 1.5rem 1rem 2rem 1rem !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        gap: 8px !important;
+        grid-auto-rows: 105px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 105px !important;
     }
 }
