@@ -4031,3 +4031,14 @@ input, select, textarea {
     position: relative;
     z-index: 1;
 }
+
+/* FIX MAPPING TITLE AND CAPTION SPACING */
+
+#wrapper > section#first > header .mapping-intro h2 {
+    margin-bottom: 0.5rem !important;
+}
+
+#wrapper > section#first > header .mapping-intro p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
