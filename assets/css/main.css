@@ -4024,3 +4024,10 @@ input, select, textarea {
     line-height: 1.5;
 }
 
+/* Reduce distance between mapping title and caption */
+
+#first header .mapping-intro p {
+    margin-top: -4rem !important;
+    position: relative;
+    z-index: 1;
+}
