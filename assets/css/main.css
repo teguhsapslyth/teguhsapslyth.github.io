@@ -2838,11 +2838,12 @@ input, select, textarea {
 /* Arrow */
 
 	a.arrow {
-		border-bottom: 0;
-		display: inline-block;
-		height: 4rem;
-		position: relative;
-		width: 6rem;
+    border-bottom: 0;
+    display: inline-block;
+    height: 4rem;
+    position: relative;
+    width: 6rem;
+    transform: rotate(-90deg);
 	}
 
 		a.arrow .label {
