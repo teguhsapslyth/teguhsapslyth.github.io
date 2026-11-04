@@ -3896,15 +3896,7 @@ input, select, textarea {
     width: 100%;
 }
 
-.photo-card img {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-height: 650px;
-    object-fit: contain;
-    object-position: center;
-    margin: 0 auto;
-}
+
 
 .photo-card figcaption {
     display: block;
@@ -4029,9 +4021,6 @@ input, select, textarea {
 .experience-grid img {
     display: block !important;
     width: 100% !important;
-    height: 130px !important;
-    max-height: 130px !important;
-    object-fit: cover !important;
     margin: 0 !important;
     border-radius: 4px;
 }
@@ -4055,10 +4044,6 @@ input, select, textarea {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .experience-grid img {
-        height: 120px !important;
-        max-height: 120px !important;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -4071,4 +4056,17 @@ input, select, textarea {
         height: 110px !important;
         max-height: 110px !important;
     }
+}
+/* CONSISTENT DOCUMENTATION IMAGE SIZE */
+
+.photo-card img,
+.experience-grid img {
+    display: block;
+    width: 100%;
+    height: clamp(180px, 22vw, 280px);
+    object-fit: contain;
+    object-position: center;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin: 0;
 }
