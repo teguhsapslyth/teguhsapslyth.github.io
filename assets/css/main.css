@@ -2843,7 +2843,6 @@ input, select, textarea {
     height: 4rem;
     position: relative;
     width: 6rem;
-    transform: rotate(-90deg);
 	}
 
 		a.arrow .label {
@@ -2860,6 +2859,7 @@ input, select, textarea {
 			height: 100%;
 			position: relative;
 			width: 3rem;
+			transform: rotate(-90deg);
 		}
 
 /* Gallery */
