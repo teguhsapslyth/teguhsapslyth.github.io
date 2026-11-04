@@ -4061,47 +4061,48 @@ input, select, textarea {
     line-height: 1.6;
 }
 
-/* MAPPING PROJECTS - FIX OVERLAP */
+/* =====================================
+   MAPPING PROJECTS - GREEN HEADER
+   ===================================== */
 
-.mapping-gallery {
+#wrapper > section#first > header .mapping-gallery {
     position: relative !important;
     display: block !important;
     width: 100% !important;
     height: auto !important;
-    margin: 30px 0 !important;
+    margin: 25px 0 0 !important;
     clear: both;
     overflow: visible !important;
 }
 
-.mapping-gallery h3 {
+#wrapper > section#first > header .mapping-gallery h3 {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
-.mapping-grid {
-    position: relative !important;
+#wrapper > section#first > header .mapping-grid {
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 20px !important;
+    gap: 12px !important;
     width: 100% !important;
-    height: auto !important;
+    margin-top: 20px !important;
 }
 
-.mapping-card {
+#wrapper > section#first > header .mapping-card {
     position: relative !important;
-    display: flex !important;
+    display: block !important;
     width: 100% !important;
-    height: 280px !important;
+    height: 180px !important;
     margin: 0 !important;
-    padding: 10px !important;
+    padding: 6px !important;
     background: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 6px;
     overflow: hidden;
     box-sizing: border-box;
 }
 
-.mapping-card img {
+#wrapper > section#first > header .mapping-card img {
     position: static !important;
     display: block !important;
     width: 100% !important;
@@ -4112,38 +4113,12 @@ input, select, textarea {
 }
 
 @media screen and (max-width: 736px) {
-    .mapping-grid {
+    #wrapper > section#first > header .mapping-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 10px !important;
     }
 
-    .mapping-card {
-        height: 180px !important;
+    #wrapper > section#first > header .mapping-card {
+        height: 130px !important;
     }
-}
-/* MAPPING PROJECTS */
-.mapping-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    width: 100%;
-    margin-top: 25px;
-}
-
-.mapping-card {
-    width: 100%;
-    height: 150px;
-    padding: 6px;
-    background: white;
-    border-radius: 6px;
-    overflow: hidden;
-    box-sizing: border-box;
-}
-
-.mapping-card img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    margin: 0;
 }
