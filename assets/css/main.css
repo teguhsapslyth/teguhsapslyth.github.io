@@ -4025,10 +4025,17 @@ input, select, textarea {
 
 #first header .mapping-intro p {
     margin: 0 !important;
+
 }
-/* Jarak konten putih dari panel hijau */
-#first .content {
-    padding-left: 60px !important;
-    padding-right: 30px !important;
-    box-sizing: border-box;
+
+#first header .mapping-intro {
+    padding: 0 1rem 2rem !important;
+}
+
+#first header .mapping-intro h2 {
+    margin: 0 0 0.5rem !important;
+}
+
+#first header .mapping-intro p {
+    margin: 0 !important;
 }
