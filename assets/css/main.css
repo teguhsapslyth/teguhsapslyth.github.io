@@ -3989,60 +3989,38 @@ input, select, textarea {
     font-size: 0.8rem;
   }
 }
-/* Practical Studio & Mapping Introduction */
+/* =====================================
+   PRACTICAL STUDIO & MAPPING INTRO
+   ===================================== */
 
 .mapping-intro {
+    width: 100%;
+    margin: 0;
+    padding: 0 1rem 2rem;
     text-align: center;
-    padding: 1rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mapping-divider {
     display: block;
     width: 65px;
     height: 3px;
-    background: #39eac5;
-    margin: 0 auto 1.5rem;
+    background-color: #39eac5;
     border-radius: 3px;
+    margin: 0 auto 1rem;
 }
 
 .mapping-intro h2 {
-    margin-bottom: 1rem;
+    margin: 0 0 0.5rem 0;
+    padding: 0;
 }
 
 .mapping-intro p {
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
     font-size: 0.9rem;
-}
-	/* Fix spacing Practical Studio caption */
-
-#first header .mapping-intro {
-    padding: 0 1rem 2rem !important;
+    line-height: 1.5;
 }
 
-#first header .mapping-intro h2 {
-    margin: 0 0 0.5rem !important;
-}
-
-#first header .mapping-intro p {
-    margin: 0 !important;
-}
-
-/* Group Practical Studio title and caption */
-
-#first header .mapping-intro {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 0.5rem !important;
-    padding: 0 !important;
-}
-
-#first header .mapping-intro h2 {
-    margin: 0 !important;
-}
-
-#first header .mapping-intro p {
-    margin: 0 !important;
-    padding: 0 !important;
-}
