@@ -4026,3 +4026,8 @@ input, select, textarea {
 #first header .mapping-intro p {
     margin: 0 !important;
 }
+	/* Memberi jarak antara panel hijau dan konten putih */
+#first > .content {
+    padding-left: 30px;
+    padding-right: 25px;
+}
