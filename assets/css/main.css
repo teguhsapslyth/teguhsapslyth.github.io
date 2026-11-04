@@ -111,6 +111,364 @@
     }
 
     #wrapper > section#first > header > .mapping-grid > .mapping-card {
+
+       
+/* ==========================================
+   PERBAIKAN MAPPING: 1 KOLOM, 4 BARIS
+   ========================================== */
+
+/* Pertahankan header Mapping di kolom hijau */
+#wrapper > section#first > header {
+    grid-area: header !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 2rem 3rem 3rem 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Judul Mapping */
+#wrapper > section#first > header > .mapping-intro {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1rem 0 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+/* Susunan gambar: 1 kolom dan 4 baris */
+#wrapper > section#first > header > .mapping-grid {
+    display: grid !important;
+    position: relative !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: repeat(4, 105px) !important;
+    grid-auto-rows: 105px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 22px 0 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Ukuran kotak gambar seragam */
+#wrapper > section#first > header > .mapping-grid > .mapping-card {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 105px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Gambar berada di dalam kotaknya */
+#wrapper > section#first > header > .mapping-grid > .mapping-card img {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+}
+
+/* Pertahankan Professional Experience di kolom kanan */
+#wrapper > section#first > .experience-gallery {
+    grid-area: content !important;
+    position: relative !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Tablet */
+@media screen and (max-width: 1152px) {
+    #wrapper > section#first > header {
+        width: 100% !important;
+        padding: 2rem !important;
+        text-align: center !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: repeat(4, 95px) !important;
+        grid-auto-rows: 95px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 95px !important;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    #wrapper > section#first > header {
+        padding: 1.5rem 1rem 2rem !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        gap: 8px !important;
+        grid-template-rows: repeat(4, 85px) !important;
+        grid-auto-rows: 85px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 85px !important;
+    }
+}
+
+/* ==========================================
+   PERBAIKAN MAPPING: 1 KOLOM, 4 BARIS
+   ========================================== */
+
+/* Pertahankan header Mapping di kolom hijau */
+#wrapper > section#first > header {
+    grid-area: header !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 2rem 3rem 3rem 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Judul Mapping */
+#wrapper > section#first > header > .mapping-intro {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1rem 0 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+/* Susunan gambar: 1 kolom dan 4 baris */
+#wrapper > section#first > header > .mapping-grid {
+    display: grid !important;
+    position: relative !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: repeat(4, 105px) !important;
+    grid-auto-rows: 105px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 22px 0 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Ukuran kotak gambar seragam */
+#wrapper > section#first > header > .mapping-grid > .mapping-card {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 105px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Gambar berada di dalam kotaknya */
+#wrapper > section#first > header > .mapping-grid > .mapping-card img {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+}
+
+/* Pertahankan Professional Experience di kolom kanan */
+#wrapper > section#first > .experience-gallery {
+    grid-area: content !important;
+    position: relative !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Tablet */
+@media screen and (max-width: 1152px) {
+    #wrapper > section#first > header {
+        width: 100% !important;
+        padding: 2rem !important;
+        text-align: center !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: repeat(4, 95px) !important;
+        grid-auto-rows: 95px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 95px !important;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    #wrapper > section#first > header {
+        padding: 1.5rem 1rem 2rem !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        gap: 8px !important;
+        grid-template-rows: repeat(4, 85px) !important;
+        grid-auto-rows: 85px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 85px !important;
+    }
+
         height: 105px !important;
+    }
+}
+
+/* ==========================================
+   PERBAIKAN MAPPING: 1 KOLOM, 4 BARIS
+   ========================================== */
+
+/* Pertahankan header Mapping di kolom hijau */
+#wrapper > section#first > header {
+    grid-area: header !important;
+    justify-self: stretch !important;
+    align-self: stretch !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 2rem 3rem 3rem 2rem !important;
+    box-sizing: border-box !important;
+}
+
+/* Judul Mapping */
+#wrapper > section#first > header > .mapping-intro {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 1rem 0 0 !important;
+    padding: 0 !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+}
+
+/* Susunan gambar: 1 kolom dan 4 baris */
+#wrapper > section#first > header > .mapping-grid {
+    display: grid !important;
+    position: relative !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: repeat(4, 105px) !important;
+    grid-auto-rows: 105px !important;
+    gap: 12px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 22px 0 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Ukuran kotak gambar seragam */
+#wrapper > section#first > header > .mapping-grid > .mapping-card {
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 105px !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    border: 1px solid rgba(0, 0, 0, 0.15) !important;
+    border-radius: 5px !important;
+    background: #fff !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+/* Gambar berada di dalam kotaknya */
+#wrapper > section#first > header > .mapping-grid > .mapping-card img {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+    margin: 0 !important;
+    object-fit: contain !important;
+    object-position: center !important;
+}
+
+/* Pertahankan Professional Experience di kolom kanan */
+#wrapper > section#first > .experience-gallery {
+    grid-area: content !important;
+    position: relative !important;
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Tablet */
+@media screen and (max-width: 1152px) {
+    #wrapper > section#first > header {
+        width: 100% !important;
+        padding: 2rem !important;
+        text-align: center !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+        grid-template-rows: repeat(4, 95px) !important;
+        grid-auto-rows: 95px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 95px !important;
+    }
+}
+
+/* HP */
+@media screen and (max-width: 480px) {
+    #wrapper > section#first > header {
+        padding: 1.5rem 1rem 2rem !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid {
+        gap: 8px !important;
+        grid-template-rows: repeat(4, 85px) !important;
+        grid-auto-rows: 85px !important;
+    }
+
+    #wrapper > section#first > header > .mapping-grid > .mapping-card {
+        height: 85px !important;
     }
 }
