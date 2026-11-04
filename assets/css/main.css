@@ -4027,7 +4027,7 @@ input, select, textarea {
 /* Reduce distance between mapping title and caption */
 
 #first header .mapping-intro p {
-    margin-top: -4rem !important;
+    margin-top: -2rem !important;
     position: relative;
     z-index: 1;
 }
