@@ -3880,198 +3880,111 @@ input, select, textarea {
 		}
 
 	}
-	```css
-/* Experience Photo Gallery */
+/* =========================================
+   EXPERIENCE PHOTO GALLERY
+   ========================================= */
+
 .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 2rem;
-    width: 100%;
-    align-items: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .photo-card {
-    margin: 0;
-    min-width: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
+  min-width: 0;
 }
 
-
-
-.photo-card figcaption {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    padding-top: 1rem;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.photo-card figcaption h3 {
-    max-width: 100%;
-    white-space: normal;
-    overflow-wrap: break-word;
-}
-
-.photo-card figcaption p {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    line-height: 1.7;
-    white-space: normal;
-    overflow-wrap: break-word;
-    margin-bottom: 1.5rem;
-}
-
-@media screen and (max-width: 736px) {
-    .photo-gallery {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .photo-card img {
-        width: 100%;
-        height: auto;
-        max-height: none;
-    }
-
-	```css
-/* Final caption layout */
-.photo-card {
-    min-width: 0;
+.photo-card img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
 .photo-card figcaption {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-.photo-card figcaption h3,
-.photo-card figcaption p {
-    max-width: 100%;
-    white-space: normal;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.photo-card figcaption {
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    padding-left: 20px;
-}
-	/* Geser caption menjauh dari garis hijau */
-#first .photo-gallery .photo-card figcaption {
-    padding-left: 35px !important;
-    padding-right: 15px !important;
-    box-sizing: border-box;
-}
-
-#first .photo-gallery .photo-card figcaption {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    margin-left: 0 !important;
-    box-sizing: border-box;
-}
-
-#first .photo-gallery .photo-card figcaption h3,
-#first .photo-gallery .photo-card figcaption p {
-    margin-left: 0;
-}
-
-#first .photo-gallery {
-    padding-left: 90px !important;
-    padding-right: 5rem !important;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-@media screen and (max-width: 736px) {
-    #first .photo-gallery {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-}
-/* Professional Experience Gallery */
+/* Gallery pengalaman kerja */
 .experience-gallery {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.experience-card {
-    margin-bottom: 2rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid rgba(144, 144, 144, 0.25);
+  width: 100%;
+  margin-top: 24px;
 }
 
 .experience-grid {
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 10px;
-    margin-bottom: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  width: 100%;
 }
+
+.experience-card {
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.experience-card img,
 .experience-grid img {
-    display: block;
-    width: 100%;
-    height: 260px;
-    object-fit: contain;
-    object-position: center;
-    background: #f5f5f5;
-    margin: 0;
-    border-radius: 4px;
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
 }
 
-
-
-.experience-card h3 {
-    margin-bottom: 12px;
+.experience-card figcaption,
+.experience-grid figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
-.experience-card h4 {
-    margin-bottom: 5px;
-}
-
-.experience-card p {
-    font-size: 0.85rem;
-    line-height: 1.6;
-    margin-bottom: 0;
-}
-
+/* Tablet */
 @media screen and (max-width: 980px) {
-    .experience-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-}
+  .experience-card img,
+  .experience-grid img {
+    height: 200px;
+  }
 
-@media screen and (max-width: 480px) {
-    .experience-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 7px;
-    }
+/* HP */
+@media screen and (max-width: 736px) {
+  .photo-gallery {
+    grid-template-columns: 1fr;
+  }
 
-    .experience-grid img {
-        height: 110px !important;
-        max-height: 110px !important;
-    }
-}
-/* CONSISTENT DOCUMENTATION IMAGE SIZE */
+  .experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
 
-.photo-card img,
-.experience-grid img {
-    display: block;
-    width: 100%;
-    height: clamp(180px, 22vw, 280px);
-    object-fit: contain;
-    object-position: center;
-    background: #f5f5f5;
-    border-radius: 4px;
-    margin: 0;
+  .photo-card img {
+    height: 200px;
+  }
+
+  .experience-card img,
+  .experience-grid img {
+    height: 150px;
+  }
+
+  .photo-card figcaption,
+  .experience-card figcaption,
+  .experience-grid figcaption {
+    font-size: 0.8rem;
+  }
 }
